@@ -4,10 +4,10 @@ while True {
 
   $issue-num = prompt("issue number: ").chomp;
 
-  if $issue-num ~~ /^^ \d+ $$/ {
+  if $issue-num ~~ /^^ \w+ $$/ {
     last
   } else {
-    say "issue should be an integer number"; 
+    say "value should match \\w+ "; 
   }
 
 }

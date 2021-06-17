@@ -1,0 +1,5 @@
+begin:
+  regexp: ^^ 'Welcome to Rakudo(tm)' \s+ \S+ $$
+  regexp: ^^ 'Implementing the Raku(tm) programming language' \s+ \S+ $$
+  regexp: ^^ 'Built on MoarVM version' \s+ \S+ $$
+end:

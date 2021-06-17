@@ -14,6 +14,7 @@
     4266 => %( tag => [ 'closed' ] ),
     4363 => %( tag => [ 'closed' ] ),
     4369 => %( tag => [ 'closed' ] ),
+    rakudo-version-banner-bug =>  %( tag => [ 'open', 'cli' ] ),
   )
 }
 
