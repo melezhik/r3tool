@@ -7,11 +7,10 @@ while True {
   if $issue-num ~~ /^^ \d+ $$/ {
     last
   } else {
-    say "issue should be an integer number"; 
+    say "issue should be an integer number";
   }
 
 }
 
-task-run "tasks/new-issue", %(
-  issue => $issue-num
-);
+bash "tomty --remove $issue-num && rm -rf $issue-num/";
+

@@ -123,6 +123,14 @@ Add/removed desired tags and run rebuild:
 tom rebuild
 ```
 
+# Another helpful command
+
+Remove issue
+
+```bash
+tom rm-issue
+```
+
 # Things to do
 
 * Add bugs for upcoming release and tag them as `rc`
@@ -137,6 +145,11 @@ Alexey Melezhik
 
 Following tools are used to run tests:
 
-* Tomty
-* Tomtit
-* Sparrow
+* [Tomty](https://github.com/melezhik/Tomty)
+* [Tomtit](https://github.com/melezhik/Tomtit)
+* [Sparrow](https://github.com/melezhik/Sparrow6)
+
+
+# Thanks to
+
+God Who inspires me in my life!
