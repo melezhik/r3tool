@@ -5,7 +5,7 @@
     4079 => %( tag => [ 'closed' ] ),
     4083 => %( tag => [ 'closed' ] ),
     4089 => %( tag => [ 'closed' ] ),
-    4097 => %( tag => [ 'open' ] ),
+    4097 => %( tag => [ 'open', 'performance' ] ),
     4100 => %( tag => [ 'open' ] ),
     4116 => %( tag => [ 'closed' ] ),
     4118 => %( tag => [ 'closed' ] ),

@@ -1,3 +1,5 @@
+note: Dispatch with native arrays unnecessary slow
+
 # user	0m2.020s
 regexp: real	\s+ '0m' (\d+ '.' \d+) s
 
