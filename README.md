@@ -122,6 +122,12 @@ Add/removed desired tags and run rebuild:
 tom rebuild
 ```
 
+# Thing to do
+
+* Add bugs for upcoming release and tag them as `rc`
+
+* Automatically update `open/close` tags by GH issues statuses 
+
 # Author
 
 Alexey Melezhik
