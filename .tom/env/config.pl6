@@ -14,6 +14,8 @@
     4266 => %( tag => [ 'closed' ] ),
     4363 => %( tag => [ 'closed' ] ),
     4369 => %( tag => [ 'closed' ] ),
+    4409 => %( tag => [ 'open', 'fresh', ] ),
+    4410 => %( tag => [ 'open', 'fresh', 'slow' ] ),
   )
 }
 
