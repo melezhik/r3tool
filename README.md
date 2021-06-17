@@ -65,6 +65,13 @@ Hard to fix issues:
 tomty --only=hardtofix --color --show-failed
 ```
 
+One can combine tags, running different groups at once:
+
+```bash
+tomty --only=closed,performance --color --show-failed
+```
+
+
 To see available groups, say:
 
 ```
