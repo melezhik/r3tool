@@ -2,6 +2,11 @@
 
 R3 is a useful toolkit for Rakudo release managers and developers, aimed to help with Rakudo release preparations.
 
+---
+
+![report example](https://raw.githubusercontent.com/melezhik/r3tool/master/screenshots/r3log-sample.png)
+
+
 # Installation
 
 ```bash
@@ -65,10 +70,6 @@ To see available groups, say:
 ```
 tom tags
 ```
-
-# Report example
-
-![report example](https://raw.githubusercontent.com/melezhik/r3tool/master/screenshots/r3log-sample.png)
 
 # Create new issue
 
