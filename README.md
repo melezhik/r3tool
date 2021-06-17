@@ -123,7 +123,7 @@ Add/removed desired tags and run rebuild:
 tom rebuild
 ```
 
-# Another helpful command
+# Another helpful commands
 
 Remove issue
 
