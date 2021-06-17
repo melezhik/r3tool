@@ -89,8 +89,26 @@ To see available groups, say:
 ```
 tom tags
 ```
+# Running on predefined environments
 
-# Create a new issue
+Instead of exporting `raku` env variable, one can set `tomty` environment for convenience:
+
+```bash
+tomty --env-edit 4f61a108
+```
+
+```raku
+%*ENV<raku> = '/tmp/whateverable/rakudo-moar/4f61a108b1e717a8e05ee861738a412d55be6ed4/bin/raku';
+
+%(
+);
+```
+
+```bash
+tomty --all --env=4f61a108 --color --show-failed
+```
+
+# Create an new issue
 
 One can use this command to generate a stub code for a new Rakudo bug:
 
