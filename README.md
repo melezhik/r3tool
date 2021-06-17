@@ -1,7 +1,6 @@
 # Rakudo Releases Readiness Toolkit
 
-R3 Tool is useful toolkit for Rakudo release managers and developers,
-aimed to help with Rakudo release preparations.
+R3 is a useful toolkit for Rakudo release managers and developers, aimed to help with Rakudo release preparations.
 
 # Installation
 
