@@ -71,7 +71,7 @@ To see available groups, say:
 tom tags
 ```
 
-# Create new issue
+# Create a new issue
 
 One can use this command to generate a stub code for a new Rakudo bug:
 
