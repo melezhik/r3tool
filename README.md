@@ -31,7 +31,19 @@ git clone https://github.com/melezhik/r3tool
 cd r3tool
 ```
 
+Run tests
+
+Against certain rakudo commit:
+
 ```bash
+export raku=/tmp/whateverable/rakudo-moar/4f61a108b1e717a8e05ee861738a412d55be6ed4/bin/raku
+tomty --color --all --show-failed
+```
+
+Against default rakudo
+
+```bash
+export raku=$(which raku)
 tomty --color --all --show-failed
 ```
 
@@ -53,7 +65,7 @@ Only open, not yet fixed issues:
 tomty --only=open --color --show-failed
 ```
 
-Only old, fixed issues:
+Only old, fixed issues (aka regression):
 
 ```bash
 tomty --only=closed --color --show-failed
