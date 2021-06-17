@@ -78,7 +78,7 @@ One can use this command to generate a stub code for a new Rakudo bug:
 tom  new-issue 
 ```
 
-After code is finished, run following to add new test to a suite:
+After code is finished, run the following command to add a new test to a suite:
 
 ```bash
 tom rebuild
