@@ -1,0 +1,6 @@
+begin:
+===
+regexp: ^^ 'Set()' $$
+regexp: ^^ 'Set()' $$
+===
+end:

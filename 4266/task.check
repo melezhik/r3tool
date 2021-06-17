@@ -1,0 +1,11 @@
+note: in other TAP implementations, a subtest always prints a header first
+
+begin:
+  <<<
+  regexp: ^^ \S " Subtest: foo"
+  regexp: ^^  \s+    'ok 1 -'
+  regexp: ^^ \s+    '1..1'
+  regexp: ^^ 'ok 1 - foo'
+  regexp: ^^ '1..1'
+  >>>
+end:

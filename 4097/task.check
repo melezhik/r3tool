@@ -1,0 +1,12 @@
+# user	0m2.020s
+regexp: real	\s+ '0m' (\d+ '.' \d+) s
+
+generator: <<CODE
+!perl6
+
+my $a  = + "{captures()[0][0]}";
+my $b = +  "{captures()[1][0]}";
+
+say "assert: ", abs( ( $b - $a ) / $b ) * 100 > 50 ?? 0 !! 1 , " a performance decrease no more then 50%";
+CODE
+

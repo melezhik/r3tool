@@ -1,0 +1,6 @@
+note: <:Int(WhateverCode.new)> should be follwed by <(Int) => WhateverCode.new>
+
+begin:
+ :Int(WhateverCode.new)
+ (Int) => WhateverCode.new
+end:
