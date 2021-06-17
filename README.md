@@ -122,7 +122,7 @@ Add/removed desired tags and run rebuild:
 tom rebuild
 ```
 
-# Thing to do
+# Things to do
 
 * Add bugs for upcoming release and tag them as `rc`
 
