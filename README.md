@@ -42,7 +42,8 @@ Certain issue:
 ```bash
 tomty --color 4369
 ```
-Only open, unfixed issues:
+
+Only open, not yet fixed issues:
 
 ```bash
 tomty --only=open --color --show-failed
@@ -54,11 +55,21 @@ Only old, fixed issues:
 tomty --only=closed --color --show-failed
 ```
 
+Hard to fix issues:
+
+```bash
+tomty --only=hardtofix --color --show-failed
+```
+
 To see available groups, say:
 
 ```
 tom tags
 ```
+
+# Report example
+
+![report example](https://raw.githubusercontent.com/melezhik/r3tool/master/screenshots/r3log-sample.png)
 
 # Author
 

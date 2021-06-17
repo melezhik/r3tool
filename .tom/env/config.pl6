@@ -10,7 +10,7 @@
     4116 => %( tag => [ 'closed' ] ),
     4118 => %( tag => [ 'closed' ] ),
     4119 => %( tag => [ 'open' ] ),
-    4124 => %( tag => [ 'open' ] ),
+    4124 => %( tag => [ 'open', 'hardtofix' ] ),
     4266 => %( tag => [ 'closed' ] ),
     4363 => %( tag => [ 'closed' ] ),
     4369 => %( tag => [ 'closed' ] ),

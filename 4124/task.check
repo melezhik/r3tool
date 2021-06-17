@@ -1,3 +1,4 @@
+note: Despite Bool.HOW ~~ Perl6::Metamodel::EnumHOW, Bool isn't an Enumeration, unlike other enums.
 begin:
 >>>
 regexp: ^^ True $$

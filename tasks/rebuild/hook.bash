@@ -5,7 +5,7 @@ set -e
 
 rm -rf .tomty/*.pl6
 
-for i in $(ls -1 | grep -v tasks|grep -v README); do
+for i in $(ls -1 | grep -v tasks|grep -v README|grep -v screen); do
   run_task "tomty-gen" i $i
 done
 
