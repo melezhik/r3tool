@@ -2,4 +2,6 @@ cat $root_dir/task.bash
 
 $raku -v
 
-$raku -e 'my @a; loop { @a.hyper[0] }' 
+timeout 30 $raku -e 'my @a; loop { @a.hyper[0] }'
+
+echo exit_status: [$?]
