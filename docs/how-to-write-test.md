@@ -1,0 +1,139 @@
+# How to write tests?
+
+In many cases new test is just a Bash script with an optional Raku regexp to check a script output.
+
+First, run test generator which will create a test stub code:
+
+```bash
+tom new-issue
+```
+
+```
+load configuration from /root/projects/r3tool/.tom/env/config.pl6
+[repository] :: index updated from file:///root/repo/api/v1/index
+issue number: 123
+[tasks/new-issue] :: stderr: ++ mkdir -p 123
+[tasks/new-issue] :: stderr: ++ echo 'cat $root_dir/task.bash'
+++ echo '$raku -e "# some code to brake" '
+[tasks/new-issue] :: <empty stdout>
+```
+
+Now we have a test folder, named after issue number - `4100` with generated code:
+
+```bash
+cat  123/task.bash
+```
+
+```
+cat $root_dir/task.bash
+$raku -e "# some code to brake"
+```
+
+We can run code using Sparrow cli:
+
+```bash
+raku=$(which raku) s6 --task-run 123/
+```
+
+```
+[sparrowtask] :: run sparrow task 123/
+[sparrowtask] :: run thing 123/
+[123/] :: cat $root_dir/task.bash
+[123/] :: $raku -e "# some code to brake"
+```
+
+Apparently nothing happens here as we run stub code that does nothing.
+
+Let's convert it into real issue case:
+
+```bash
+nano $root_dir/task.bash
+```
+
+```bash
+$raku -e 'die "something went wrong"'
+```
+
+Now when we run, we get expected test failure:
+
+```bash
+raku=$(which raku) s6 --task-run 123/
+```
+
+```
+[sparrowtask] :: run sparrow task 123/
+[sparrowtask] :: run thing 123/
+[123/] :: cat $root_dir/task.bash
+[123/] ::
+[123/] :: $raku -e 'die "something went wrong"'
+[123/] :: stderr: something went wrong
+  in block <unit> at -e line 1
+
+[123/] :: task exit status: 1
+[123/] :: task 123/ FAILED
+```
+
+# Check rules
+
+Some code examples do not fail, they produce unexpected output. This is where we can use
+Raku regular expressions to verify code correctness:
+
+```
+cat 123/tast.bash
+```
+
+```
+cat $root_dir/task.bash
+
+$raku -e 'say "I say this"'
+```
+
+```bash
+cat 123/task.check
+```
+
+```
+regexp: 'I say that'
+```
+
+```bash
+raku=$(which raku) s6 --task-run 123/
+```
+
+```
+[sparrowtask] :: run sparrow task 123/
+[sparrowtask] :: run thing 123/
+[123/] :: cat $root_dir/task.bash
+[123/] ::
+[123/] :: $raku -e 'say "I say this"'
+[123/] :: I say this
+[task check] stdout match <'I say that'> False
+```
+
+Well. This is just an example, you can do a lot more, as test scenarios backed by Sparrow engine:
+
+* [write tests](https://github.com/melezhik/Sparrow6/blob/master/documentation/development.md) on Raku instead of Bash
+* use more [sophisticated constructions](https://github.com/melezhik/Sparrow6/blob/master/documentation/taskchecks.md) to very scripts output
+
+
+## Add test to a test suite
+
+The final step is to add test to a test suite. To that just run:
+
+```bash
+tom rebuild
+```
+
+This command will add new test to existing test suite, now you can run a new test either by:
+
+```
+tomty --all 
+```
+
+Or by 
+
+```
+tomty 123
+```
+
+
