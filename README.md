@@ -102,7 +102,7 @@ tomty --env-edit 4f61a108
 tomty --all --env=4f61a108 --color --show-failed
 ```
 
-# Create an new issue
+# Create a new issue
 
 One can use this command to generate a stub code for a new Rakudo bug:
 
@@ -115,7 +115,7 @@ After you've [written a test](https://github.com/melezhik/r3tool/blob/master/doc
 Run the following command to run a new test:
 
 ```bash
-tom <issue-number>
+tomty <issue-number>
 ```
 
 # Test tags
