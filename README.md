@@ -102,6 +102,12 @@ tomty --env-edit 4f61a108
 tomty --all --env=4f61a108 --color --show-failed
 ```
 
+One can see a list of predefined environments by:
+
+```
+tomty --env-list
+```
+
 # Create a new issue
 
 One can use this command to generate a stub code for a new Rakudo bug:
