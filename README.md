@@ -145,6 +145,7 @@ Then edit a following tomty test _header_:
 | ---------- | ------------|
 | open       | open issue  |
 | closed     | closed issue  |
+| nr         | reported but not reproduced  |
 | fresh      | fresh issue  |
 | slow       | running a test takes a considerable time  |
 | hardtofix  | hard to fix issue  |
