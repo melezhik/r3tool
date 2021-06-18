@@ -83,12 +83,6 @@ One can combine tags, running different groups at once:
 tomty --only=closed,performance --color --show-failed
 ```
 
-
-To see available groups, say:
-
-```
-tom tags
-```
 # Running on predefined environments
 
 Instead of exporting `RAKUBIN` env variable, one can set `tomty` environment for convenience:
