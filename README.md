@@ -172,6 +172,8 @@ tom rm-issue
 
 * Add bugs for upcoming release and tag them as `rc`
 
+* Run on logically `OR` tags, like `--only=open+performance` - only unfixed performance issues
+
 * Automatically update `open/close` tags by GH issues statuses 
 
 # Author
