@@ -1,7 +1,7 @@
 #!raku
 
-my $i = task_var("i");
-my $tags = config()<issues>{$i}<tag>.perl;
+my $i = config()<issue>;
+my $tags = config()<tags>.perl;
 
 say "building [.tomty/$i.pl6]";
 

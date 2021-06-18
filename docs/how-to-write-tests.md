@@ -116,21 +116,17 @@ Well. This is just an example, you can do a lot more, as test scenarios backed b
 * use more [sophisticated constructions](https://github.com/melezhik/Sparrow6/blob/master/documentation/taskchecks.md) to very scripts output
 
 
-## Add test to a test suite
+## Run test from suite
 
-The final step is to add test to a test suite. To that just run:
+To run test from suite:
 
-```bash
-tom rebuild
-```
-
-This command will add new test to existing test suite, now you can run a new test either by:
+Either run all tests:
 
 ```
 tomty --all 
 ```
 
-Or by 
+Or only this test:
 
 ```
 tomty 123

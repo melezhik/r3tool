@@ -116,49 +116,44 @@ One can use this command to generate a stub code for a new Rakudo bug:
 tom  new-issue 
 ```
 
-After you've [written a test](https://github.com/melezhik/r3tool/blob/master/docs/how-to-write-tests.md), run the following command to add a new test to a suite:
+After you've [written a test](https://github.com/melezhik/r3tool/blob/master/docs/how-to-write-tests.md), 
+
+Run the following command to run a new test:
 
 ```bash
-tom rebuild
+tom <issue-number>
 ```
 
 # Test tags
 
-Tags allow to split tests by groups. Use following flow to assign tags to tests
+Tags allow to split tests by groups.
+
+To assign tag to test run a following command:
 
 ```bash
 export EDITOR=nano
-tom --env-edit default
+tomty <issue-number> --edit
 ```
 
-Tags are defined as Arrays in tom environment file:
+The edit test code:
 
 ```raku
-{
-  issues => %(
-    2920 => %( tag => [ 'closed' ] ),
-    4077 => %( tag => [ 'closed' ] ),
-    4079 => %( tag => [ 'closed' ] ),
-    4083 => %( tag => [ 'closed' ] ),
-    4089 => %( tag => [ 'closed' ] ),
-    4097 => %( tag => [ 'open', 'performance' ] ),
-    4100 => %( tag => [ 'open' ] ),
-    4116 => %( tag => [ 'closed' ] ),
-    4118 => %( tag => [ 'closed' ] ),
-    4119 => %( tag => [ 'open' ] ),
-    4124 => %( tag => [ 'open', 'hardtofix' ] ),
-    4266 => %( tag => [ 'closed' ] ),
-    4363 => %( tag => [ 'closed' ] ),
-    4369 => %( tag => [ 'closed' ] ),
-  )
-}
+=begin tomty
+%(
+  tag => $["open", "fresh", "slow"]
+);
+=end tomty
 ```
 
-Add/removed desired tags and run rebuild:
+# List of tags
 
-```bash
-tom rebuild
-```
+| tag        | description |
+| ---------- | ------------|
+| open       | open issue  |
+| closed     | closed issue  |
+| fresh      | fresh issue  |
+| slow       | running a test takes a considerable time  |
+| hardtofix  | hard to fix issue  |
 
 # Another helpful commands
 

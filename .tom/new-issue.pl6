@@ -1,4 +1,5 @@
 my $issue-num;
+my $tags;
 
 while True {
 
@@ -12,6 +13,9 @@ while True {
 
 }
 
+$tags = prompt("tags: (use space separator for many): ").chomp;
+
 task-run "tasks/new-issue", %(
-  issue => $issue-num
+  issue => $issue-num,
+  tags => $tags ?? $tags.split(/\s+/) !! []
 );
