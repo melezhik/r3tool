@@ -75,8 +75,8 @@ raku=$(which raku) s6 --task-run 123/
 
 # Check rules
 
-Some code examples do not fail, they produce unexpected output. This is where we can use
-Raku regular expressions to verify code correctness:
+Some code examples do not fail, they produce unexpected output. Instead of test exit code, we can use
+Raku regular expressions as a verification criteria:
 
 ```
 cat 123/tast.bash
