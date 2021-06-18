@@ -14,7 +14,7 @@ load configuration from /root/projects/r3tool/.tom/env/config.pl6
 issue number: 123
 [tasks/new-issue] :: stderr: ++ mkdir -p 123
 [tasks/new-issue] :: stderr: ++ echo 'cat $root_dir/task.bash'
-++ echo '$raku -e "# some code to brake" '
+++ echo '$RAKUBIN -e "# some code to brake" '
 [tasks/new-issue] :: <empty stdout>
 ```
 
@@ -26,20 +26,20 @@ cat  123/task.bash
 
 ```
 cat $root_dir/task.bash
-$raku -e "# some code to brake"
+$RAKUBIN -e "# some code to brake"
 ```
 
 We can run code using Sparrow cli:
 
 ```bash
-raku=$(which raku) s6 --task-run 123/
+RAKUBIN=$(which raku) s6 --task-run 123/
 ```
 
 ```
 [sparrowtask] :: run sparrow task 123/
 [sparrowtask] :: run thing 123/
 [123/] :: cat $root_dir/task.bash
-[123/] :: $raku -e "# some code to brake"
+[123/] :: $RAKUBIN -e "# some code to brake"
 ```
 
 Apparently nothing happens here as we run stub code that does nothing.
@@ -51,13 +51,13 @@ nano $root_dir/task.bash
 ```
 
 ```bash
-$raku -e 'die "something went wrong"'
+$RAKUBIN -e 'die "something went wrong"'
 ```
 
 Now when we run, we get expected test failure:
 
 ```bash
-raku=$(which raku) s6 --task-run 123/
+RAKUBIN=$(which raku) s6 --task-run 123/
 ```
 
 ```
@@ -65,7 +65,7 @@ raku=$(which raku) s6 --task-run 123/
 [sparrowtask] :: run thing 123/
 [123/] :: cat $root_dir/task.bash
 [123/] ::
-[123/] :: $raku -e 'die "something went wrong"'
+[123/] :: $RAKUBIN -e 'die "something went wrong"'
 [123/] :: stderr: something went wrong
   in block <unit> at -e line 1
 
@@ -85,7 +85,7 @@ cat 123/tast.bash
 ```
 cat $root_dir/task.bash
 
-$raku -e 'say "I say this"'
+$RAKUBIN -e 'say "I say this"'
 ```
 
 ```bash
@@ -97,7 +97,7 @@ regexp: 'I say that'
 ```
 
 ```bash
-raku=$(which raku) s6 --task-run 123/
+RAKUBIN=$(which raku) s6 --task-run 123/
 ```
 
 ```
@@ -105,7 +105,7 @@ raku=$(which raku) s6 --task-run 123/
 [sparrowtask] :: run thing 123/
 [123/] :: cat $root_dir/task.bash
 [123/] ::
-[123/] :: $raku -e 'say "I say this"'
+[123/] :: $RAKUBIN -e 'say "I say this"'
 [123/] :: I say this
 [task check] stdout match <'I say that'> False
 ```

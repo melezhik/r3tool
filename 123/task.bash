@@ -1,3 +1,3 @@
 cat $root_dir/task.bash
 
-$raku -e 'say "I say this"'
+$RAKUBIN -e 'say "I say this"'

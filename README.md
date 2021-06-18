@@ -36,14 +36,14 @@ Run tests
 Against certain rakudo commit:
 
 ```bash
-export raku=/tmp/whateverable/rakudo-moar/4f61a108b1e717a8e05ee861738a412d55be6ed4/bin/raku
+export RAKUBIN=/tmp/whateverable/rakudo-moar/4f61a108b1e717a8e05ee861738a412d55be6ed4/bin/raku
 tomty --color --all --show-failed
 ```
 
 Against default rakudo:
 
 ```bash
-export raku=$(which raku)
+export RAKUBIN=$(which raku)
 tomty --color --all --show-failed
 ```
 
@@ -91,14 +91,14 @@ tom tags
 ```
 # Running on predefined environments
 
-Instead of exporting `raku` env variable, one can set `tomty` environment for convenience:
+Instead of exporting `RAKUBIN` env variable, one can set `tomty` environment for convenience:
 
 ```bash
 tomty --env-edit 4f61a108
 ```
 
 ```raku
-%*ENV<raku> = '/tmp/whateverable/rakudo-moar/4f61a108b1e717a8e05ee861738a412d55be6ed4/bin/raku';
+%*ENV<RAKUBIN> = '/tmp/whateverable/rakudo-moar/4f61a108b1e717a8e05ee861738a412d55be6ed4/bin/raku';
 
 %(
 );

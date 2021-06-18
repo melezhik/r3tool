@@ -1,4 +1,4 @@
 set -x
 set -e
 
-$raku -e 'dd Int => *.Int; dd (Int) => *.Int;' 2>&1
+$RAKUBIN -e 'dd Int => *.Int; dd (Int) => *.Int;' 2>&1

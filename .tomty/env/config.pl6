@@ -1,4 +1,4 @@
-%*ENV<raku> = "/opt/rakudo-pkg/bin/raku";
+%*ENV<RAKUBIN> = "/opt/RAKUBINdo-pkg/bin/RAKUBIN";
 
 %(
 );
