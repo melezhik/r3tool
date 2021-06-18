@@ -116,7 +116,7 @@ One can use this command to generate a stub code for a new Rakudo bug:
 tom  new-issue 
 ```
 
-After code is finished, run the following command to add a new test to a suite:
+After you've [written a test](https://github.com/melezhik/r3tool/blob/master/docs/how-to-write-tests.md), run the following command to add a new test to a suite:
 
 ```bash
 tom rebuild
