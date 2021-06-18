@@ -29,7 +29,7 @@ cat $root_dir/task.bash
 $RAKUBIN -e "# some code to brake"
 ```
 
-We can run code using Sparrow cli:
+We can run a test using Sparrow cli:
 
 ```bash
 RAKUBIN=$(which raku) s6 --task-run 123/
