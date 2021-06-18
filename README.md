@@ -178,6 +178,12 @@ Remove issue
 tom rm-issue
 ```
 
+Show Raku version used in tests
+
+```bash
+tom raku-version
+```
+
 # Things to do
 
 * Add bugs for upcoming release and tag them as `rc`
