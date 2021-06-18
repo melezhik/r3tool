@@ -19,3 +19,7 @@ task-run "tasks/new-issue", %(
   issue => $issue-num,
   tags => $tags ?? $tags.split(/\s+/) !! []
 );
+
+say "==============================================================";
+say "you test is ready. run it using:";
+say "tomty $issue-num";
