@@ -126,10 +126,10 @@ To assign tag to test run a following command:
 
 ```bash
 export EDITOR=nano
-tomty <issue-number> --edit
+tomty --edit <issue-number>
 ```
 
-The edit test code:
+Then edit a following tomty test _header_:
 
 ```raku
 =begin tomty
