@@ -1,0 +1,9 @@
+between: {^^ '===='} {^^ '====='}
+  regexp: (\S+)
+end:
+
+generator: <<RAKU
+!perl6  
+  #say "note: ", capture()[0];
+  say "assert: ", capture()[0] eq 'BUG!' ?? 0 !! 1, " no BUG! in output";
+RAKU
