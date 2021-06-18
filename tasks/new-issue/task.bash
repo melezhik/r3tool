@@ -9,4 +9,11 @@ set -x
 mkdir -p $issue
 
 echo 'cat $root_dir/task.bash'  > $issue/task.bash
-echo '$RAKUBIN -e "# some code to brake" ' >> $issue/task.bash
+
+echo >> $issue/task.bash
+
+echo '$RAKUBIN -v'  >> $issue/task.bash
+
+echo >> $issue/task.bash
+
+echo '$RAKUBIN -e "# some code to brake"' >> $issue/task.bash

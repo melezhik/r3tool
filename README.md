@@ -21,6 +21,12 @@ tomty --completion
 
 # setup local Sparrow repo
 s6 --repo-init ~/repo
+
+# upload some Sparrow plugins
+git clone https://github.com/melezhik/sparrow-plugins /tmp/sparrow-plugins
+cd /tmp/sparrow-plugins
+cd bash
+s6 --upload
 s6 --index-update
 ```
 
@@ -75,6 +81,12 @@ Hard to fix issues:
 
 ```bash
 tomty --only=hardtofix --color --show-failed
+```
+
+Release `2021_06` issues:
+
+```bash
+tomty --only=2021_06 --color --show-failed
 ```
 
 One can combine tags, running different groups at once:
@@ -151,8 +163,9 @@ Then edit a following tomty test _header_:
 | ---------- | ------------|
 | open       | open issue  |
 | closed     | closed issue  |
-| nr         | reported but not reproduced  |
-| rc         | issues to be closed in the upcoming release  |
+| nr         | reported but not reproduced      |
+| rc_<YYYY_MM>  | issues/PR added in this release  |
+| pr         | test for PR | 
 | fresh      | fresh issue  |
 | slow       | running a test takes a considerable time  |
 | hardtofix  | hard to fix issue  |
