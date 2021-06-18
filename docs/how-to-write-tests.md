@@ -18,7 +18,7 @@ issue number: 123
 [tasks/new-issue] :: <empty stdout>
 ```
 
-Now we have a test folder, named after issue number - `1234` with generated code:
+Now we have a test folder, named after issue number - `123` with generated code:
 
 ```bash
 cat  123/task.bash
