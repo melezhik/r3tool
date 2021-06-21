@@ -1,0 +1,4 @@
+begin:
+    'is rw' on parameters of 'sub MAIN' usually cannot be satisfied.
+    Did you mean 'is copy'?
+end:
