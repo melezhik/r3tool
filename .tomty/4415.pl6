@@ -2,7 +2,7 @@
 #!raku
 
 say "==================================================";
-say "[https://github.com/rakudo/rakudo/issues/pull_4450]";
+say "[https://github.com/rakudo/rakudo/pull/4415]";
 say "==================================================
 ";
 
@@ -12,5 +12,5 @@ say "==================================================
 );
 =end tomty
 
-task-run "pull_4450";
+task-run "pull_4415";
 
