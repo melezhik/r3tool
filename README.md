@@ -89,13 +89,13 @@ More sophisticated filtering
 Release `2021_06`, open issues:
 
 ```bash
-tomty --only=2021_06+open --color --show-failed
+tomty --only=rc_2021_06+open --color --show-failed
 ```
 
 Release `2021_06`, closed issues but slkip slow tests:
 
 ```bash
-tomty --only=2021_06+closed --skip=slow --color --show-failed
+tomty --only=rc_2021_06+closed --skip=slow --color --show-failed
 ```
 
 # Running on predefined environments
