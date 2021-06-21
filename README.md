@@ -84,16 +84,18 @@ Hard to fix issues:
 tomty --only=hardtofix --color --show-failed
 ```
 
-Release `2021_06` issues:
+More sophisticated filtering
+
+Release `2021_06`, open issues:
 
 ```bash
-tomty --only=2021_06 --color --show-failed
+tomty --only=2021_06+open --color --show-failed
 ```
 
-One can combine tags, running different groups at once:
+Release `2021_06`, closed issues but slkip slow tests:
 
 ```bash
-tomty --only=closed,performance --color --show-failed
+tomty --only=2021_06+closed --skip=slow --color --show-failed
 ```
 
 # Running on predefined environments
@@ -194,9 +196,7 @@ tom rakudo-commits
 
 # Things to do
 
-* Add bugs for upcoming release and tag them as `rc`
-
-* Run on logically `OR` tags, like `--only=open+performance` - only unfixed performance issues
+* Add bugs for upcoming release (`2021_06`) and tag them as `rc`
 
 * Automatically update `open/close` tags by GH issues statuses 
 
