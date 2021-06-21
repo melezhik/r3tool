@@ -92,10 +92,16 @@ Release `2021_06`, open issues:
 tomty --only=rc_2021_06+open --color --show-failed
 ```
 
-Release `2021_06`, closed issues but slkip slow tests:
+Release `2021_06`, closed issues but skip slow tests:
 
 ```bash
 tomty --only=rc_2021_06+closed --skip=slow --color --show-failed
+```
+
+Release `2021_06` or `2021_05`, issues:
+
+```bash
+tomty --only=rc_2021_05,rc_2021_06 --color --show-failed
 ```
 
 # Running on predefined environments
