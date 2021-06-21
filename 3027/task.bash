@@ -2,5 +2,7 @@ cat $root_dir/task.bash
 
 $RAKUBIN -v
 
-$RAKUBIN -e 'sub ztask( (:$key, :$value) ) {}; ztask ‘foo’.any => ‘bar’;'
+timeout 2 $RAKUBIN -e 'sub ztask( (:$key, :$value) ) {}; ztask ‘foo’.any => ‘bar’;' 2>&1
+
+echo
 

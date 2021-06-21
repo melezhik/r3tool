@@ -22,10 +22,11 @@ tomty --completion
 # setup local Sparrow repo
 s6 --repo-init ~/repo
 
-# upload some Sparrow plugins
+# upload Sparrow plugins
 git clone https://github.com/melezhik/sparrow-plugins /tmp/sparrow-plugins
 cd /tmp/sparrow-plugins
 cd bash
+cd ../directory
 s6 --upload
 s6 --index-update
 ```
@@ -183,6 +184,13 @@ Show Raku version used in tests
 ```bash
 tom raku-version
 ```
+
+Show last N rakudo commits
+
+```bash
+tom rakudo-commits
+```
+
 
 # Things to do
 

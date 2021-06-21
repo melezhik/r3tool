@@ -1,0 +1,4 @@
+begin:
+Type check failed in binding to parameter '$key'; expected Any but got Junction (any("foo"))
+  in sub ztask at -e line 1
+end:
