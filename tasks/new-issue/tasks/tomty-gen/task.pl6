@@ -3,14 +3,19 @@
 my $i = config()<issue>;
 my $tags = config()<tags>.perl;
 
-say "building [.tomty/$i.pl6]";
+my $header = "#!raku";
 
-".tomty/$i.pl6".IO.spurt(qq[
-#!raku
+$header ~= qq[
 
 say "==================================================";
 say "[https://github.com/rakudo/rakudo/issues/$i]";
-say "==================================================\n";
+say "==================================================";
+] if $i ~~ /^^ \d+ $$/;
+
+say "building [.tomty/$i.pl6]";
+
+".tomty/$i.pl6".IO.spurt(qq[
+$header
 
 =begin tomty
 %(

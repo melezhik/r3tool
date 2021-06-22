@@ -4,7 +4,7 @@ while True {
 
   $issue-num = prompt("issue number: ").chomp;
 
-  if $issue-num ~~ /^^ \d+ $$/  or $issue-num ~~ /^^ "pull_" \d+ $$/ {
+  if $issue-num ~~ /^^ \w+ $$/ {
     last
   } else {
     say "value should be integer";
