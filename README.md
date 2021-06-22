@@ -106,21 +106,21 @@ tomty --only=rc_2021_05,rc_2021_06 --color --show-failed
 
 # Running on predefined environments
 
-Instead of exporting `RAKUBIN` env variable, one can set `tomty` environment for convenience:
+Instead of exporting `RAKUBIN` env variable, one can set [tomty environment](https://github.com/melezhik/Tomty#environments) for convenience:
 
 ```bash
-tomty --env-edit 4f61a108
+tomty --env-edit 2021_06
 ```
 
 ```raku
-%*ENV<RAKUBIN> = '/tmp/whateverable/rakudo-moar/4f61a108b1e717a8e05ee861738a412d55be6ed4/bin/raku';
+%*ENV<RAKUBIN> = '/tmp/whateverable/rakudo-moar/4887a169b47a1b5805dc3d90b5aa4c83a86fc4dd/bin/raku';
 
 %(
 );
 ```
 
 ```bash
-tomty --all --env=4f61a108 --color --show-failed
+tomty --all --env=2021_06 --color --show-failed
 ```
 
 One can see a list of predefined environments by:
