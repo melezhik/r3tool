@@ -11,3 +11,6 @@ module-run 'Rakudo::Install', %(
   skip-zef => True,
   patch-profile => False,
 );
+
+say "to use installed Rakudo version in r3:";
+say "export RAKUBIN=/tmp/whateverable/rakudo-moar/$sha/bin/";
