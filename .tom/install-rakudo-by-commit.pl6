@@ -13,4 +13,4 @@ module-run 'Rakudo::Install', %(
 );
 
 say "to use installed Rakudo version in r3:";
-say "export RAKUBIN=/tmp/whateverable/rakudo-moar/$sha/bin/";
+say "export RAKUBIN=/tmp/whateverable/rakudo-moar/$sha/bin/raku";
