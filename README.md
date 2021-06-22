@@ -104,6 +104,11 @@ Release `2021_05` or `2021_05`, issues:
 tomty --only=rc_2021_05,rc_2021_06 --color --show-failed
 ```
 
+Test for rakudo release 2021_06 against all bugs, but skipping open,example,slow and requiring unicode support in terminal:
+```bash
+tomty --env=2021_06 --skip=slow,example,open,unicode --color --show-failed
+```
+
 # Running on predefined environments
 
 Instead of exporting `RAKUBIN` env variable, one can set [tomty environment](https://github.com/melezhik/Tomty#environments) for convenience:

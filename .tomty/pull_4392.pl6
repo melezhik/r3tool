@@ -8,7 +8,7 @@ say "==================================================
 
 =begin tomty
 %(
-  tag => $["pr", "fresh", "closed"]
+  tag => $["pr", "fresh", "closed","unicode"]
 );
 =end tomty
 
