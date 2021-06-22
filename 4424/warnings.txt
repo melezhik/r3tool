@@ -1,0 +1,2 @@
+WARNINGS for -e:
+Useless use of &say in sink context (line 1)

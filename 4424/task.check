@@ -1,0 +1,16 @@
+between: {^^ '>>>'} { ^^ '<<<'}
+  regexp: .*
+end:
+
+generator: <<RAKU
+!perl6
+   if captures().elems > 3 {
+
+      say "assert: 0 no warnings ('WARNINGS for -e:)"
+        if captures()[2][0] eq 'WARNINGS for -e:';
+
+      say "assert: 0 no warnings (Useless use of \&say ... )"
+        if captures()[3][0] eq 'Useless use of &say in sink context (line 1)';
+
+   }
+RAKU

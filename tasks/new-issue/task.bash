@@ -16,4 +16,4 @@ echo '$RAKUBIN -v'  >> $issue/task.bash
 
 echo >> $issue/task.bash
 
-echo '$RAKUBIN -e "# some code to brake"' >> $issue/task.bash
+echo "\$RAKUBIN -e '# some code to brake'" >> $issue/task.bash
