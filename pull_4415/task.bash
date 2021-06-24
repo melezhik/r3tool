@@ -12,8 +12,8 @@ $RAKUBIN -e 'say ^10 .map: { $_ == 5 ?? last(42) !! $_ }' 2>&1 # (0 1 2 3 4 42)
 
 # and also in .grep:
 
-echo 'ex3.1: say ^10 .grep: { $_ == 5 ?? last       !! $_ %% 2 }'
-$RAKUBIN -e 'say ^10 .grep: { $_ == 5 ?? last       !! $_ %% 2 }' 2>&1 # (0 2 4)
+echo 'ex3.1: say ^10 .grep: { $_ == 5 ?? (last)       !! $_ %% 2 }'
+$RAKUBIN -e 'say ^10 .grep: { $_ == 5 ?? (last)       !! $_ %% 2 }' 2>&1 # (0 2 4)
 
 echo 'ex3.2: say ^10 .grep: { $_ == 5 ?? last()       !! $_ %% 2 }'
 $RAKUBIN -e 'say ^10 .grep: { $_ == 5 ?? last()       !! $_ %% 2 }' 2>&1 # (0 2 4)
