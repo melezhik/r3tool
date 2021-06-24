@@ -12,5 +12,9 @@ say "==================================================
 );
 =end tomty
 
-task-run "4389";
+if %*ENV<USER> eq "root" {
+  say "skip for root user";
+} else {
+  task-run "4389";
+}
 

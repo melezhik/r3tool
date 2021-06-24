@@ -176,7 +176,7 @@ Then edit a following tomty test _header_:
 | tag        | description |
 | ---------- | ------------|
 | open       | open issue  |
-| closed     | closed issue  |
+| closed     | closed issue/PR  |
 | nr         | reported but not reproduced      |
 | rc_<YYYY_MM>  | issues/PR added in this release  |
 | pr         | test for PR | 
