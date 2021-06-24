@@ -4,4 +4,6 @@ begin:
   regexp: ^^ '³' $$
   regexp: ^^ $$
   regexp: ^^ '²' $$
+  regexp: ^^ $$
+  regexp: ^^ '≔' $$
 end:
