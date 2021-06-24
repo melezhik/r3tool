@@ -1,0 +1,7 @@
+begin:
+  Hey, I have some html5 code!
+  regexp: ^^ $$
+  regexp: ^^ '³' $$
+  regexp: ^^ $$
+  regexp: ^^ '²' $$
+end:
