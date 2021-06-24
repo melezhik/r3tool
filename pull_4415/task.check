@@ -1,0 +1,41 @@
+note: example1
+begin:
+  regexp:  ^^ 'ex1'
+  (0 1 2 3 4)
+end:
+
+note: example2
+begin:
+  regexp:  ^^ 'ex2'
+  (0 1 2 3 4 42)
+end:
+
+note: example3.1
+begin:
+  regexp:  ^^ 'ex3.1'
+  (0 2 4)
+end:
+
+note: example3.2
+begin:
+  regexp:  ^^ 'ex3.2'
+  (0 2 4)
+end:
+
+note: example4
+begin:
+  regexp:  ^^ 'ex4'
+  (0 2 4 5)
+end:
+
+note: example5
+begin:
+  regexp:  ^^ 'ex5'
+  (1 2 3 4)
+end:
+
+note: example6
+begin:
+  regexp:  ^^ 'ex6'
+  (1 2 3 4 42)
+end:

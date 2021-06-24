@@ -180,6 +180,7 @@ Then edit a following tomty test _header_:
 | nr         | reported but not reproduced      |
 | rc_<YYYY_MM>  | issues/PR added in this release  |
 | pr         | test for PR | 
+| fr         | feature request |
 | fresh      | fresh issue  |
 | slow       | running a test takes a considerable time  |
 | hardtofix  | hard to fix issue  |
