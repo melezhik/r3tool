@@ -39,3 +39,9 @@ begin:
   regexp:  ^^ 'ex6'
   (1 2 3 4 42)
 end:
+
+note: example7
+begin:
+  regexp:  ^^ 'ex7'
+  (0,1,2,3,4,slip(42,66)).Seq
+end:
