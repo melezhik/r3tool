@@ -8,7 +8,7 @@ say "==================================================
 
 =begin tomty
 %(
-  tag => ['closed', 'freeze', 'rc_2021_06']
+  tag => ['closed', 'freeze', 'rc_2021_07']
 );
 =end tomty
 
