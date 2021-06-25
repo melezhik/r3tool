@@ -1,0 +1,11 @@
+regexp: ^^ "time:" \s+ (\S+)
+
+generator: <<CODE
+!perl6
+
+say "note: execution time found: ", capture()[0];
+
+say "assert: ", ( capture()[0] <= 0.1 ?? "1" !! "0" ), " execution time is less then 0.1";
+
+CODE
+
