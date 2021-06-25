@@ -180,9 +180,10 @@ Then edit a following tomty test _header_:
 | nr         | reported but not reproduced      |
 | rc_<YYYY_MM>  | issues/PR added in this release  |
 | pr         | test for PR | 
+| test_needed | cover some GH issues with "test needed" tag |
 | fr         | feature request |
 | fresh      | fresh issue  |
-| freeze     | test for "freeze" cases | 
+| freeze     | test for "freeze" cases |
 | slow       | running a test takes a considerable time  |
 | hardtofix  | hard to fix issue  |
 | unicode    | tests require unicode support in terminal |
