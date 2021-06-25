@@ -1,0 +1,13 @@
+begin: 
+  regexp: ^^ ">>>"
+  regexp: (.*)
+end:
+
+generator: <<RAKU
+!perl6
+
+say "note: line captured: ", capture()[0];
+
+say "assert: ", (capture()[0] ~~ /"Cannot do 'print' on a closed handle"/ ) ?? "0" !! "1", " no unhelpful error message in stderr"
+
+RAKU
