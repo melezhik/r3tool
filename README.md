@@ -182,6 +182,7 @@ Then edit a following tomty test _header_:
 | pr         | test for PR | 
 | fr         | feature request |
 | fresh      | fresh issue  |
+| freeze     | test for "freeze" cases | 
 | slow       | running a test takes a considerable time  |
 | hardtofix  | hard to fix issue  |
 | unicode    | tests require unicode support in terminal |
