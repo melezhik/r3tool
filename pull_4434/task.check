@@ -11,3 +11,4 @@ say "note: the last example should contain .2 followed by 99 zeros";
 say 'ex8 (6,"0.2', "{0 x 99}" ,'\")';
 C
 
+ex9 (6, "0.2000")
