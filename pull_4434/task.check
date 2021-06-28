@@ -1,0 +1,13 @@
+ex1 (0, 0)
+ex2 (0, 0)
+ex3 (0, 0)
+ex4 (0, 0.6e0)
+ex5 (0, "0.60")
+ex6 (123456789123456784, "0.00")
+
+generator: <<C
+!perl6
+say "note: the last example should contain .2 followed by 99 zeros";
+say 'ex8 (6,"0.2', "{0 x 99}" ,'\")';
+C
+
