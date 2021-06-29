@@ -171,7 +171,16 @@ Then edit a following tomty test _header_:
 =end tomty
 ```
 
-# List of tags
+To list available tags:
+
+```bash
+  tomty --tags
+```
+
+# "Official" list of tags
+
+These tags are currently supported:
+
 
 | tag        | description |
 | ---------- | ------------|
