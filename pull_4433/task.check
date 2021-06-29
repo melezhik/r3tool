@@ -1,0 +1,20 @@
+begin:
+  ex1
+  ===  
+  αβαβγ ♥♥♥
+  ===
+end:
+
+
+begin:
+  ex2
+  ===
+  regexp: ^^ \s\s\s\s A $$
+  regexp: ^^ $$
+  regexp: ^^ \s\s\s\s \s\s\s\s B $$
+  regexp: ^^ $$
+  regexp: ^^ \s\s\s\s \s\s\s\s  \s\s\s\s C $$
+  regexp: ^^ $$
+  regexp: ^^ \s\s\s\s \s\s\s\s  \s\s\s\s  \s\s\s\s D $$
+  ===
+end:
