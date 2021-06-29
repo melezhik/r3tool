@@ -43,5 +43,5 @@ end:
 note: example7
 begin:
   regexp:  ^^ 'ex7'
-  (0,1,2,3,4,slip(42,66)).Seq
+  (0, 1, 2, 3, 4, 42, 66).Seq
 end:
