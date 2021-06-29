@@ -177,6 +177,22 @@ To list available tags:
   tomty --tags
 ```
 
+One can combine `--tags` with `--only` and `--skip` options.
+
+Examples:
+
+List open issues for rc 2021_07:
+
+```bash
+tomty --tags --only=rc_2021_07+open --color
+```
+
+List closed issues for rc 2021_07, but skipping PR tests
+
+```bash
+tomty --tags --only=rc_2021_07+closed --skip=pr --color
+```
+
 # "Official" list of tags
 
 These tags are currently supported:
