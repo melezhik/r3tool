@@ -171,13 +171,13 @@ Then edit a following tomty test _header_:
 =end tomty
 ```
 
-To list available tags:
+To list available tags (and tests):
 
 ```bash
   tomty --tags
 ```
 
-One can combine `--tags` with `--only` and `--skip` options.
+One can combine `--tags` with `--only` and `--skip` options to _list_ tests with certain tags.
 
 Examples:
 
@@ -190,7 +190,7 @@ tomty --tags --only=rc_2021_07+open --color
 List closed issues for rc 2021_07, but skipping PR tests
 
 ```bash
-tomty --tags --only=rc_2021_07+closed --skip=pr --color
+tomty --tags --only=rc_2021_07+closed --skip=pr --color\
 ```
 
 # "Official" list of tags
