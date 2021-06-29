@@ -19,3 +19,5 @@ $RAKUBIN -e 'say "ex7 ", modf(+6.2,2).perl'
 $RAKUBIN -e 'say "ex8 ", modf(+6.2,100).perl'
 
 $RAKUBIN -e 'say "ex9 ", modf(+6.2,4).perl'
+
+$RAKUBIN -e 'say "ex_A ", modf(+6.2,10).perl'
