@@ -7,7 +7,7 @@ say "==================================================";
 
 =begin tomty
 %(
-  tag => $["pr", "fresh", "open","unicode"]
+  tag => $["pr", "closed","unicode", "rc_2021_07", "fr"]
 );
 =end tomty
 

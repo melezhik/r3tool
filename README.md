@@ -209,6 +209,13 @@ tom rakudo-commits
 ```
 
 
+Install Rakudo whateverable for certain commit ( requires `Sparrow6::Rakudo::Install` module )
+
+```bash
+export sha=<full sha>
+tom  install-rakudo-by-commit
+```
+
 # Things to do
 
 * Add bugs for upcoming release (`2021_06`) and tag them as `rc`
