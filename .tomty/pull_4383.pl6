@@ -3,7 +3,7 @@
 
 =begin tomty
 %(
-  tag => $["performance", "2021_06", "closed", "experimental", "pr"]
+  tag => $["performance", "rc_2021_06", "closed", "experimental", "pr"]
 );
 =end tomty
 
