@@ -1,5 +1,7 @@
 cat $root_dir/task.bash
 
+$RAKUBIN -v
+
 cat << 'HERE' > $cache_dir/test1.pod
 =for pod
 =for nested
