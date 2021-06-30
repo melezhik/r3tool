@@ -3,7 +3,7 @@
 
 =begin tomty
 %(
-  tag => $["pr", "closed", "unicode", ""]
+  tag => $["pr", "closed", "unicode"]
 );
 =end tomty
 

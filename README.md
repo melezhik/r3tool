@@ -171,10 +171,10 @@ Then edit a following tomty test _header_:
 =end tomty
 ```
 
-To list available tags (and tests):
+To list available tags:
 
 ```bash
-  tomty --tags
+  tomty --list --tags
 ```
 
 One can combine `--tags` with `--only` and `--skip` options to _list_ tests with certain tags.
