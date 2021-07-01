@@ -21,5 +21,7 @@ task-run "tasks/new-issue", %(
 );
 
 say "==============================================================";
-say "you test is ready. run it using:";
-say "tomty $issue-num";
+say "you test is ready";
+say "=================";
+say "1) prepare it: nano $issue-num/task.bash";
+say "2) run it: tomty $issue-num";

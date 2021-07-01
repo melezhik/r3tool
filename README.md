@@ -206,6 +206,7 @@ These tags are currently supported:
 | rc_<YYYY_MM>  | issues/PR added in this release  |
 | pr         | test for PR | 
 | test_needed | cover some GH issues with "test needed" tag |
+| clarify    | an issue / test case needs clarification |
 | fr         | feature request |
 | fresh      | fresh issue  |
 | freeze     | test for "freeze" cases |
