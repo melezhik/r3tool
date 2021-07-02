@@ -1,0 +1,11 @@
+regexp: (\S+) \s+ \S+
+
+
+code: <<RAKU
+!perl6
+  my @list;
+  for captures()<> -> $c {
+    push @list, $c[0];
+  }
+  update_state %( list => @list ) 
+RAKU
