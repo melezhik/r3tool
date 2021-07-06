@@ -11,5 +11,6 @@ This is some
 multi-line
 data.
 END
+say "test ok" if $data;
 HERE
 
