@@ -1,1 +1,1 @@
-regexp: ^^ "test ok" $$
+regexp: ^^ ">" \s "test ok" $$
