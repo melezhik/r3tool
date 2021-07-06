@@ -1,5 +1,11 @@
+#!raku
+
 %(
   default => %(
     skip => "example,experimental,slow,unicode"
+  ),
+  rc_2021_07 => %(
+    skip => "example,experimental,slow",
+    only => "rc_2021_07+closed"
   )
 )
