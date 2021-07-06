@@ -1,6 +1,6 @@
 note: if we run as REPL, we should see 'abc' in stdout
 between: { 'as_repl >>>' } { '<<<' }
-  regexp: ^^ abc $$
+  regexp: ^^ '>' \s abc $$
 end:
 
 note: if we run as script, we should see 'abc' in stdout
