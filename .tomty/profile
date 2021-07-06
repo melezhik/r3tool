@@ -2,10 +2,10 @@
 
 %(
   default => %(
-    skip => "example,experimental,slow,unicode"
+    skip => "example,experimental,slow,unicode,flap"
   ),
   rc_2021_07 => %(
-    skip => "example,experimental,slow",
+    skip => "example,experimental,slow,flap",
     only => "rc_2021_07+closed"
   )
 )
