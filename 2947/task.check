@@ -1,9 +1,7 @@
-note: if we run as REPL, we should see 'done' in stdout
-between: { 'repl >>>' } { '<<<' }
-  regexp: ^^ done $$
-end:
+begin:
 
-note: if we run as script, we should see 'done' in stdout
-between: { 'as_script >>>' } { '<<<' }
-  regexp: ^^ done $$
+  > Promise.new
+  > Nil
+  > done
+
 end:
