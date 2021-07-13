@@ -1,8 +1,12 @@
 #!raku
 
 %(
-  default => %(
+  all => %(
     skip => "example,experimental,slow,unicode,flap"
+  ),
+  default => %(
+    skip => "example,experimental,slow,flap",
+    only => "rc_2021_07+closed"
   ),
   rc_2021_07 => %(
     skip => "example,experimental,slow,flap",
