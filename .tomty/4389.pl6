@@ -8,7 +8,7 @@ say "==================================================
 
 =begin tomty
 %(
-  tag => $["open", "fresh", "modules", "filesystem"]
+  tag => $["open", "fresh", "modules", "filesystem", "noroot"]
 );
 =end tomty
 
