@@ -3,7 +3,7 @@
 
 =begin tomty
 %(
-  tag => $["closed", "rc_2021_07"]
+  tag => $["closed", "rc_2021_07", "deprecated"]
 );
 =end tomty
 
