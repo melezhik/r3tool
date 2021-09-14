@@ -45,6 +45,6 @@ $RAKUBIN2 -e 'use v6.e.PREVIEW; my $i; say do while ++$i < 10 { $i == 5 ?? last(
 
 echo "==="
 
-$RAKUBIN -e 'use v6.e.PREVIEW; dd ^10 .map: { last slip(42,66) if $_ == 5; $_ }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM' 2>&1
-$RAKUBIN2 -e 'use v6.e.PREVIEW; dd ^10 .map: { last slip(42,66) if $_ == 5; $_ }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM' 2>&1
+$RAKUBIN -e 'use v6.e.PREVIEW; dd ^10000 .map: { last slip(42,66) if $_ == 5; $_ }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM' 2>&1
+$RAKUBIN2 -e 'use v6.e.PREVIEW; dd ^10000 .map: { last slip(42,66) if $_ == 5; $_ }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM' 2>&1
 
