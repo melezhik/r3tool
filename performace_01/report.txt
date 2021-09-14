@@ -1,0 +1,67 @@
+[repository] :: index updated from file:///root/repo/api/v1/index
+[performace_01] :: Welcome to 𝐑𝐚𝐤𝐮𝐝𝐨™ v2021.07.
+[performace_01] :: Implementing the 𝐑𝐚𝐤𝐮™ programming language v6.d.
+[performace_01] :: Built on MoarVM version 2021.07.
+[performace_01] :: Welcome to 𝐑𝐚𝐤𝐮𝐝𝐨™ v2021.08-169-g16142c71c.
+[performace_01] :: Implementing the 𝐑𝐚𝐤𝐮™ programming language v6.d.
+[performace_01] :: Built on MoarVM version 2021.08-514-g32e0c279f.
+[performace_01] :: time: 0.0004326
+[performace_01] ::  <== (-e say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: time: 0.0004781
+[performace_01] ::  <== (-e say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: ===
+[performace_01] :: (0 1 2 3 4)
+[performace_01] :: time: 0.0035126
+[performace_01] ::  <== (-e say ^10 .map: { $_ == 5 ?? (last)   !! $_ }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: (0 1 2 3 4)
+[performace_01] :: time: 0.0064052
+[performace_01] ::  <== (-e say ^10 .map: { $_ == 5 ?? (last)   !! $_ }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: ===
+[performace_01] :: (0 1 2 3 4 42)
+[performace_01] :: time: 0.0044391
+[performace_01] ::  <== (-e use v6.e.PREVIEW; say ^10 .map: { $_ == 5 ?? last(42) !! $_ }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: (0 1 2 3 4 42)
+[performace_01] :: time: 0.0067677
+[performace_01] ::  <== (-e use v6.e.PREVIEW; say ^10 .map: { $_ == 5 ?? last(42) !! $_ }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: ===
+[performace_01] :: (0 2 4)
+[performace_01] :: time: 0.0039387
+[performace_01] ::  <== (-e use v6.e.PREVIEW; say ^10 .grep: { $_ == 5 ?? (last)  !! $_ %% 2 }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: (0 2 4)
+[performace_01] :: time: 0.0063509
+[performace_01] ::  <== (-e use v6.e.PREVIEW; say ^10 .grep: { $_ == 5 ?? (last) !! $_ %% 2 }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: ===
+[performace_01] :: (0 2 4)
+[performace_01] :: time: 0.0059687
+[performace_01] ::  <== (-e use v6.e.PREVIEW; say ^10 .grep: { $_ == 5 ?? last()  !! $_ %% 2 }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: (0 2 4)
+[performace_01] :: time: 0.0065837
+[performace_01] ::  <== (-e use v6.e.PREVIEW; say ^10 .grep: { $_ == 5 ?? last() !! $_ %% 2 }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: ===
+[performace_01] :: (0 2 4 5)
+[performace_01] :: time: 0.00313
+[performace_01] ::  <== (-e use v6.e.PREVIEW; say ^10 .grep: { $_ == 5 ?? last(True) !! $_ %% 2 }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: (0 2 4 5)
+[performace_01] :: time: 0.0070137
+[performace_01] ::  <== (-e use v6.e.PREVIEW; say ^10 .grep: { $_ == 5 ?? last(True) !! $_ %% 2 }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: ===
+[performace_01] :: (1 2 3 4)
+[performace_01] :: time: 0.0044199
+[performace_01] ::  <== (-e use v6.e.PREVIEW; my $i; say do while ++$i < 10 { $i == 5 ?? (last) !! $i }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: (1 2 3 4)
+[performace_01] :: time: 0.010215
+[performace_01] ::  <== (-e use v6.e.PREVIEW; my $i; say do while ++$i < 10 { $i == 5 ?? (last) !! $i }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: ===
+[performace_01] :: (1 2 3 4 42)
+[performace_01] :: time: 0.0046436
+[performace_01] ::  <== (-e use v6.e.PREVIEW; my $i; say do while ++$i < 10 { $i == 5 ?? last(42) !! $i }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: (1 2 3 4 42)
+[performace_01] :: time: 0.0061957
+[performace_01] ::  <== (-e use v6.e.PREVIEW; my $i; say do while ++$i < 10 { $i == 5 ?? last(42) !! $i }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: ===
+[performace_01] :: (0, 1, 2, 3, 4, 42, 66).Seq
+[performace_01] :: time: 0.0088719
+[performace_01] ::  <== (-e use v6.e.PREVIEW; dd ^10 .map: { last slip(42,66) if $_ == 5; $_ }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
+[performace_01] :: (0, 1, 2, 3, 4, 42, 66).Seq
+[performace_01] :: time: 0.0102194
+[performace_01] ::  <== (-e use v6.e.PREVIEW; dd ^10 .map: { last slip(42,66) if $_ == 5; $_ }; say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM)
