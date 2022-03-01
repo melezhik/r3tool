@@ -12,6 +12,18 @@ class Pipeline does Sparky::JobApi::Role {
 
     }
 
+    directory "{%*ENV<HOME>}/.sparky/projects/r3-tool";
+
+    my $stash = self.new-job(:mine(True)).get-stash;
+
+    file "{%*ENV<HOME>}/.sparky/projects/r3-tool/sparrowfile", %(
+      content => $stash<sparrowfile>
+    );
+
+    file "{%*ENV<HOME>}/.sparky/projects/r3-tool/sparky.yaml", %(
+      content => $stash<sparky>
+    );
+
   }
 
 
@@ -22,6 +34,11 @@ class Pipeline does Sparky::JobApi::Role {
     for config()<workers><> -> $w {
 
       my $j = self.new-job: :project("r3-worker-setup"), :api($w<api>);
+
+      $j.put-stash: %( 
+        sparky => "files/sparky/sparky.yaml".IO.slurp,
+        sparrowfile => "files/sparky/sparrowfile".IO.slurp,
+      );
 
       $j.queue({
         description => "r3 worker setup",
