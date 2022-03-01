@@ -43,7 +43,8 @@ class Pipeline does Sparky::JobApi::Role {
     directory $.rakudo-install-dir;
 
     git-scm "https://github.com/rakudo/rakudo.git", %(
-      to => $.rakudo-install-dir
+      to => $.rakudo-install-dir,
+      branch => tags()<SCM_SHA>,
     );
 
     bash "perl Configure.pl --gen-moar --gen-nqp --backends=moar", %(

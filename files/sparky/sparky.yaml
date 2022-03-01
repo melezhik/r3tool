@@ -4,8 +4,12 @@ sparrowdo:
   no_index_update: false
   bootstrap: false
   format: default
-  tags: foo=bar,message=hello world,name=alex
+  tags: SCM_SHA=master
   description: r3 test
 disabled: false
 allow_manual_run: true  
 keep_builds: 5
+
+scm:
+  url: https://github.com/rakudo/rakudo.git
+  branch: master
