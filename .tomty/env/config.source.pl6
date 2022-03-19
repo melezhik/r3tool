@@ -1,2 +1,2 @@
-%*ENV<RAKUBIN> = "/root/projects/rakudo/install/bin/raku";
+%*ENV<RAKUBIN> = "{%*ENV<HOME>}/projects/rakudo/install/bin/raku";
 %();

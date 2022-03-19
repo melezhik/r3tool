@@ -1,1 +1,1 @@
-regexp: ^^ 'Array element = Array.new(:shape(1,), [Any])' $$
+regexp: ^^ 'Array.new(:shape(1,), [Any])' $$
