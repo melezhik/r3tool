@@ -3,7 +3,7 @@ exit code: [0]
 begin:
 == err
 Ignoring [Int] as shape specification, did you mean 'my Int @foo' ?
-  in block <unit> at -e line 1
-Array element = [1, 2, 3]
+in block <unit> at -e line 1
+[1, 2, 3]
 ===
 end:
