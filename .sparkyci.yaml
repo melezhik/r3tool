@@ -1,7 +1,7 @@
 init:
   variables:
     RAKUDO_VERSION: d4e8b671ab38d7b02b3f1eaa263b4ee6da1cad01
-    RAKUBIN=/tmp/whateverable/rakudo-moar/d4e8b671ab38d7b02b3f1eaa263b4ee6da1cad01/bin/raku 
+    RAKUBIN: /tmp/whateverable/rakudo-moar/d4e8b671ab38d7b02b3f1eaa263b4ee6da1cad01/bin/raku 
 
   packages:
     rakudo:
