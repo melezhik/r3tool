@@ -9,5 +9,6 @@ main:
   build:
     pre: |
       set -x
+      zef install --/test Tomty
       RAKUBIN=/tmp/whateverable/rakudo-moar/$RAKUDO_VERSION/bin/raku
       tomty --only=closed --show-failed
