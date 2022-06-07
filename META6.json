@@ -1,0 +1,28 @@
+{
+  "auth": "zef:melezhik",
+  "authors" : [
+    "Alexey Melezhik"
+  ],
+  "build-depends" : [ ],
+  "depends" : [
+    "Tomty"
+  ],
+  "description" : "R3Tool",
+  "license" : "Artistic-2.0",
+  "name" : "R3Tool",
+  "perl" : "6.*",
+  "provides" : {
+    "R3Tool" : "lib/R3Tool.rakumod"
+  },
+  "resources" : [ ],
+  "source-type" : "git",
+  "source-url" : "https://github.com/melezhik/r3tool.git",
+  "support" : {
+    "bugtracker" : "https://github.com/melezhik/r3tool/issues",
+    "source" : "https://github.com/melezhik/r3tool.git"
+  },
+  "tags" : [ ],
+  "test-depends" : [ ],
+  "version" : "0.0.1"
+}
+
