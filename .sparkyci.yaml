@@ -1,4 +1,13 @@
 init:
+  variables:
+    RAKUDO_VERSION: d4e8b671ab38d7b02b3f1eaa263b4ee6da1cad01
+
   packages:
     rakudo:
-      version: d4e8b671ab38d7b02b3f1eaa263b4ee6da1cad01
+      version: $RAKUDO_VERSION
+main:
+  build:
+    pre: |
+      set -x
+      RAKUBIN=/tmp/whateverable/rakudo-moar/$RAKUDO_VERSION/bin/raku
+      tomty --only=closed --show-failed
