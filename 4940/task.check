@@ -1,0 +1,8 @@
+note: there should be no lines
+note: between line2
+note: and line3
+begin:
+line1
+line2
+line3
+end:
