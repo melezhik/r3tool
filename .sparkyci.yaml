@@ -11,4 +11,4 @@ main:
     pre: |
       set -x
       zef install --/test Tomty
-      tomty --only=closed --show-failed
+      tomty  --all --show-failed
