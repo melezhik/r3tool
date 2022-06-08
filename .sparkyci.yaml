@@ -1,7 +1,6 @@
 init:
   variables:
-    RAKUDO_VERSION: d4e8b671ab38d7b02b3f1eaa263b4ee6da1cad01
-    RAKUBIN: /tmp/whateverable/rakudo-moar/d4e8b671ab38d7b02b3f1eaa263b4ee6da1cad01/bin/raku 
+    RAKUDO_VERSION: dd7f3eb976efeaee92d2678af642893cb1e51c60
 
   packages:
     rakudo:
@@ -10,5 +9,6 @@ main:
   build:
     pre: |
       set -x
+      export RAKUBIN=/tmp/whateverable/rakudo-moar/$RAKUDO_VERSION/bin/raku
       zef install --/test Tomty
       tomty  --all --show-failed
