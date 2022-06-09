@@ -3,7 +3,7 @@
 
 =begin tomty
 %(
-  tag => $["closed", "slow"]
+  tag => $["closed", "slow", "flap"]
 );
 =end tomty
 
