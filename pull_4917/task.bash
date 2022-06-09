@@ -105,7 +105,12 @@ cd $cache_root_dir
 
 pwd
 
+
 $RAKUBIN prepare.raku 2>&1
+
+ls -l 
+
+tree
 
 set +e
 

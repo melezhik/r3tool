@@ -7,6 +7,10 @@ init:
   packages:
     rakudo:
       version: $RAKUDO_VERSION
+
+  script: |
+    sudo apk add tree
+    
 main:
   build:
     pre: |
