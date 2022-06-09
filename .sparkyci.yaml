@@ -3,7 +3,8 @@ init:
     RAKUDO_VERSION: b5a82d28b3c8f8080f25d478347f263f4b4464e9
     RAKUBIN: /tmp/whateverable/rakudo-moar/b5a82d28b3c8f8080f25d478347f263f4b4464e9/bin/raku
     SP6_LOG_NO_TIMESTAMPS: 1
-    
+    SP6_FORMAT_TERSE: 1
+
   packages:
     rakudo:
       version: $RAKUDO_VERSION
