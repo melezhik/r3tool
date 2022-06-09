@@ -107,6 +107,9 @@ pwd
 
 $RAKUBIN prepare.raku 2>&1
 
+set +e
+
 timeout 20 $RAKUBIN -I lib code.raku 2>&1
 
+echo "exit code: " $?
 
