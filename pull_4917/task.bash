@@ -114,7 +114,7 @@ tree
 
 set +e
 
-timeout 20 $RAKUBIN -I lib code.raku 2>&1
+timeout 30 $RAKUBIN -I lib code.raku 2>&1
 
 echo "exit code: " $?
 
