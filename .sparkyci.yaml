@@ -1,7 +1,7 @@
 init:
   variables:
-    RAKUDO_VERSION: 750487c6b12a331abc64348b8f0b69ba906be329
-    RAKUBIN: /tmp/whateverable/rakudo-moar/750487c6b12a331abc64348b8f0b69ba906be329/bin/raku
+    RAKUDO_VERSION: f2546b446ca38a6eafc8b78d30a358f97c35402b
+    RAKUBIN: /tmp/whateverable/rakudo-moar/f2546b446ca38a6eafc8b78d30a358f97c35402b/bin/raku
     SP6_LOG_NO_TIMESTAMPS: 1
 
   packages:
