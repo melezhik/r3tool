@@ -1,6 +1,6 @@
 init:
   variables:
-    RAKUDO_VERSION: 7cf26457288a245646e134fa3fbf6488a7d0d28f
+    RAKUDO_VERSION: 6dc2f92c98575b8296c8efac69b2e0166200498e
     SP6_LOG_NO_TIMESTAMPS: 1
 
   packages:
