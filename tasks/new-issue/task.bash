@@ -17,3 +17,8 @@ echo '$RAKUBIN -v'  >> $issue/task.bash
 echo >> $issue/task.bash
 
 echo "\$RAKUBIN -e '# some code to brake'" >> $issue/task.bash
+
+git add $issue
+
+git add .tomty/$issue.pl6
+

@@ -1,0 +1,23 @@
+begin:
+test1
+Cannot use '5 hours' as a unit on a Date
+  in block <unit> at -e line 1
+regexp: .*
+end
+end:
+
+begin:
+test2
+Cannot use '5 minutes' as a unit on a Date
+  in block <unit> at -e line 1
+regexp: .*
+end
+end:
+
+begin:
+test3
+Cannot use '5 seconds' as a unit on a Date
+  in block <unit> at -e line 1
+regexp: .*
+end
+end:

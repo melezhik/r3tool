@@ -5,8 +5,8 @@
     skip => "example,experimental,slow,unicode,flap"
   ),
   default => %(
-    skip => "example,experimental,slow,flap,noroot,deprecated",
-    only => "rc_2021_07+closed"
+    skip => "example,experimental,flap,noroot,deprecated,flickering,clarify,flaky,slow",
+    only => "closed"
   ),
   rc_2021_07 => %(
     skip => "example,experimental,slow,flap,noroot",

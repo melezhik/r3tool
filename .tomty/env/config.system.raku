@@ -1,4 +1,4 @@
-%*ENV<RAKUBIN> = qx{which raku};
+%*ENV<RAKUBIN> ||= qx{which raku};
 
 %(
 );

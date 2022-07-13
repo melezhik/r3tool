@@ -2,15 +2,15 @@
 #!raku
 
 say "==================================================";
-say "[https://github.com/rakudo/rakudo/issues/3865]";
+say "[https://github.com/rakudo/rakudo/issues/4940]";
 say "==================================================";
 
 
 =begin tomty
 %(
-  tag => $["performance", "closed", "test_needed", "flickering"]
+  tag => $["closed", "clarify"]
 );
 =end tomty
 
-task-run "3865";
+task-run "4940";
 

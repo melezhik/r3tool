@@ -1,0 +1,4 @@
+begin:
+Cannot resolve caller foo(Int:D); none of these signatures matches:
+(int $i)
+end:

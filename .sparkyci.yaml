@@ -1,0 +1,19 @@
+init:
+  variables:
+    RAKUDO_VERSION: e7acf4930a871b9b91693831f3fb1a186c9a73fe
+    SP6_LOG_NO_TIMESTAMPS: 1
+
+  packages:
+    rakudo:
+      version: $RAKUDO_VERSION
+
+  script: |
+    sudo apk add tree coreutils
+    
+main:
+  build:
+    pre: |
+      set -x
+      export RAKUBIN=/tmp/whateverable/rakudo-moar/$RAKUDO_VERSION/bin/raku
+      zef install --/test Tomty
+      tomty  --all --show-failed
