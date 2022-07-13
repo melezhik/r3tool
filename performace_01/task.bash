@@ -2,8 +2,10 @@
 
 #set -x
 
-$RAKUBIN -v
-$RAKUBIN2 -v
+echo "first candidate: " $($RAKUBIN -v)
+echo "second candidate: " $($RAKUBIN2 -v)
+
+echo ==========================================
 
 $RAKUBIN -e 'say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM'
 $RAKUBIN2 -e 'say "time: ", now - INIT now; say " <== ", Rakudo::Internals.PROGRAM'
