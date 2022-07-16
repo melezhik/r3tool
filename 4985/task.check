@@ -1,0 +1,2 @@
+No such method 'last' for invocant of type 'List'.  Did you mean any of
+regexp: "these:" \s+ "'tail'" .* '?' \s* $$
