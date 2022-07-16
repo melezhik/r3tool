@@ -12,9 +12,9 @@ say "[https://github.com/rakudo/rakudo/issues/$i]";
 say "==================================================";
 ] if $i ~~ /^^ \d+ $$/;
 
-say "building [.tomty/$i.pl6]";
+say "building [.tomty/$i.raku]";
 
-".tomty/$i.pl6".IO.spurt(qq[
+".tomty/$i.raku".IO.spurt(qq[
 $header
 
 =begin tomty

@@ -20,5 +20,5 @@ echo "\$RAKUBIN -e '# some code to brake'" >> $issue/task.bash
 
 git add $issue
 
-git add .tomty/$issue.pl6
+git add .tomty/$issue.raku
 
