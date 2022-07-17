@@ -8,15 +8,22 @@ set -x
 
 mkdir -p $issue
 
-echo 'cat $root_dir/task.bash'  > $issue/task.bash
+cat << 'CODE' > $issue/task.bash
+set -e
 
-echo >> $issue/task.bash
+cat $root_dir/task.bash
 
-echo '$RAKUBIN -v'  >> $issue/task.bash
+$RAKUBIN -v
 
-echo >> $issue/task.bash
+cat << 'HERE' > $cache_dir/code.raku
 
-echo "\$RAKUBIN -e '# some code to brake'" >> $issue/task.bash
+# broken code here
+
+HERE
+
+$RAKUBIN $cache_dir/code.raku
+
+CODE
 
 git add $issue
 

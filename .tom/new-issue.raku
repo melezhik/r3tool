@@ -17,7 +17,7 @@ $tags = prompt("tags: (use space separator for many): ").chomp;
 
 task-run "tasks/new-issue", %(
   issue => $issue-num,
-  tags => $tags ?? $tags.split(/\s+/) !! []
+  tags => $tags ?? $tags.split(/\s+/) !! ['open']
 );
 
 say "==============================================================";
