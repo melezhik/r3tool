@@ -21,4 +21,3 @@ HERE
 
 $RAKUBIN -I $cache_root_dir $cache_root_dir/main.raku 2>&1
 
-echo "exit code: $?"
