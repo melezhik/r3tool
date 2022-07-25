@@ -1,0 +1,6 @@
+begin:
+Invocant of method 'ACCEPTS' must be an object instance of type
+'DateTime', not a type object of type 'DateTime(Str)'
+end:
+
+exit code: 1
