@@ -3,7 +3,7 @@
 
 =begin tomty
 %(
-  tag => $["open", ""]
+  tag => $["closed"]
 );
 =end tomty
 
