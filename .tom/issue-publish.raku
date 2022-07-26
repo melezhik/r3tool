@@ -1,8 +1,10 @@
 #!raku
 
 my $issue = prompt("issue num: ");
+my $comment = prompt("comment: ");
 
-my $msg = "https://github.com/rakudo/rakudo/issues/{$issue}";
+my $msg =  $comment ?? "[$comment] - https://github.com/rakudo/rakudo/issues/{$issue}" !! 
+"https://github.com/rakudo/rakudo/issues/{$issue}";
 
 task-run "commit issue", "git-commit", %( message => $msg );
 
