@@ -9,11 +9,10 @@ init:
 
   script: |
     sudo apk add tree coreutils
+    zef install --/test Tomty 2>&1 
     
 main:
   build:
     pre: |
-      set -x
       export RAKUBIN=/tmp/whateverable/rakudo-moar/$RAKUDO_VERSION/bin/raku
-      zef install --/test Tomty
       tomty  --all --show-failed
