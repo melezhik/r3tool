@@ -1,6 +1,6 @@
 init:
   variables:
-    RAKUDO_VERSION: 99bafe65d11e4bf85ce8abaa013b9b14d33859a5
+    RAKUDO_VERSION: 75fa35e40f2a624ec67781dea81476b9077ab374
     SP6_LOG_NO_TIMESTAMPS: 1
     SP6_DUMP_TASK_CODE: 1
 
@@ -9,6 +9,7 @@ init:
       version: $RAKUDO_VERSION
 
   script: |
+
     sudo apk add tree coreutils py3-ansi2html
     zef install https://github.com/melezhik/Sparrow6.git --force-install
     zef install --/test Tomty
