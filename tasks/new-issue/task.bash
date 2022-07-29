@@ -11,7 +11,6 @@ mkdir -p $issue
 cat << 'CODE' > $issue/task.bash
 set -e
 
-cat $root_dir/task.bash
 
 $RAKUBIN -v
 

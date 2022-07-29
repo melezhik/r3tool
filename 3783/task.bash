@@ -2,7 +2,6 @@
 
 set -e
 
-cat $root_dir/task.bash
 
 cd $cache_dir
 

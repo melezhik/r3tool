@@ -1,7 +1,6 @@
 #!bash
 
-#cat $root_dir/task.bash
-
+#
 $RAKUBIN -v
 
 echo 'ex1: say ^10 .map: { $_ == 5 ?? (last)   !! $_ }'

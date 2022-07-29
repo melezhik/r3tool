@@ -1,6 +1,5 @@
 #!bash
 
-cat $root_dir/task.bash
 
 $RAKUBIN -v
 

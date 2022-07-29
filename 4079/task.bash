@@ -1,6 +1,5 @@
 set -e
 
-cat $root_dir/task.bash
 
 touch $cache_root_dir/file.txt
 

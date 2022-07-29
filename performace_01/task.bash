@@ -1,5 +1,4 @@
-#cat $root_dir/task.bash
-
+#
 #set -x
 
 echo "first candidate: " $($RAKUBIN -v)

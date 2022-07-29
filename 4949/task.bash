@@ -1,4 +1,3 @@
-cat $root_dir/task.bash
 
 cd $cache_root_dir
 
@@ -25,7 +24,7 @@ cat << 'HERE' > META6.json
 {
   "perl" : "6.*",
   "name" : "MyModule",
-  "version" : "0.0.7",
+  "version" : "0.0.12",
   "description" : "test",
   "depends" : [],
   "test-depends": [],
@@ -38,11 +37,5 @@ cat << 'HERE' > META6.json
 HERE
 
 $RAKUBIN -v
-
-echo "pwd:" $(pwd)
-
-echo "t/test.raku"
-
-cat t/test.raku
 
 $RAKUBIN -I lib t/test.raku

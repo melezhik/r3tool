@@ -1,4 +1,3 @@
-cat $root_dir/task.bash
 
 cd $cache_root_dir
 
