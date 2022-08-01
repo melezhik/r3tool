@@ -2,19 +2,21 @@ init:
   variables:
     RAKUDO_VERSION: 47f9b2860b76ce0d7b9a57c7759d7676d60db94e
     SP6_LOG_NO_TIMESTAMPS: 1
-    SP6_DUMP_TASK_CODE: 1
 
   packages:
     rakudo:
       version: $RAKUDO_VERSION
 
   script: |
-    sudo apk add tree coreutils py3-ansi2html
+    set -e
+    sudo apk add tree coreutils python-ansi2html
     zef install https://github.com/melezhik/Sparrow6.git --force-install
     zef install --/test Tomty
 
 main:
   build:
     pre: |
+      set -e
       export RAKUBIN=/tmp/whateverable/rakudo-moar/$RAKUDO_VERSION/bin/raku
+      export SP6_DUMP_TASK_CODE=1
       tomty  --all --show-failed --color | ansi2html
