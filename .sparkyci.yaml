@@ -9,7 +9,8 @@ init:
 
   script: |
     set -e
-    sudo apk add tree coreutils python-ansi2html
+    sudo apk add tree coreutils py3-pip
+    pip3 install ansi2html
     zef install https://github.com/melezhik/Sparrow6.git --force-install
     zef install --/test Tomty
 
