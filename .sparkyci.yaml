@@ -9,7 +9,6 @@ init:
       version: $RAKUDO_VERSION
 
   script: |
-
     sudo apk add tree coreutils py3-ansi2html
     zef install https://github.com/melezhik/Sparrow6.git --force-install
     zef install --/test Tomty
