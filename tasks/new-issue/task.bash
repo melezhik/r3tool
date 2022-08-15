@@ -11,7 +11,6 @@ mkdir -p $issue
 cat << 'CODE' > $issue/task.bash
 set -e
 
-
 $RAKUBIN -v
 
 cat << 'HERE' > $cache_dir/code.raku
@@ -21,7 +20,6 @@ cat << 'HERE' > $cache_dir/code.raku
 HERE
 
 $RAKUBIN $cache_dir/code.raku
-
 CODE
 
 git add $issue
