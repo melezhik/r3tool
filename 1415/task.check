@@ -1,0 +1,12 @@
+regexp: '[' (\S+) ']'
+
+generator: <<CODE
+!raku
+
+my $time = capture()[0];
+
+say "note: speed should be well enough";
+
+say "assert: ", ($time <= 0.1) ?? "1" !! "0", " time is less then 0.1 sec";
+
+CODE
