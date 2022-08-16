@@ -1,0 +1,17 @@
+regexp: '[' (.*) ']'
+
+generator: <<CODE
+!raku
+
+my $c = 0;
+
+for capture()[0].split(/\s+/) -> $s {
+  if $s eq "True" {
+    say "note: invalid sugnal found (signal name: True)";
+    $s++;
+  }
+}
+
+say "assert: ", ($c>0 ?? 0 !! 1), " all signals are valid";
+
+CODE
