@@ -24,7 +24,7 @@ cat << 'HERE' > META6.json
 {
   "perl" : "6.*",
   "name" : "MyModule",
-  "version" : "0.0.16",
+  "version" : "0.0.17",
   "description" : "test",
   "depends" : [],
   "test-depends": [],

@@ -1,1 +1,3 @@
-task-run "tasks/html-report";
+task-run "tasks/html-report", %(
+  env => "source"
+);
