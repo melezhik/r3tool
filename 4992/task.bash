@@ -14,4 +14,4 @@ class C {
 my $c4 = C.new: attr => 42;
 HERE
 
-$RAKUBIN $cache_dir/code.raku
+$RAKUBIN $cache_dir/code.raku 2>&1
