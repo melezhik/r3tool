@@ -1,22 +1,17 @@
 init:
   variables:
-    RAKUDO_VERSION: 36b0a635ff97517cc7c203d522e1c90a4166883a
     SP6_LOG_NO_TIMESTAMPS: 1
 
   packages:
-    rakudo:
-      version: $RAKUDO_VERSION
+    rakudo: {}
 
   script: |
     set -e
     sudo apk add tree coreutils
-    zef install https://github.com/melezhik/Sparrow6.git --force-install
-    zef install --/test Tomty
 
 main:
   build:
     pre: |
       set -e
-      export RAKUBIN=/tmp/whateverable/rakudo-moar/$RAKUDO_VERSION/bin/raku
       export SP6_DUMP_TASK_CODE=1
-      tomty  --all --show-failed
+      tomty  --all --show-failed --color
