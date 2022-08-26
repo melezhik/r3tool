@@ -1,3 +1,5 @@
+zef "Pastebin::Gist";
+
 my %st = task-run "tasks/html-report", %(
   env => "source",
   issue_num => %*ENV<ISSUE> || ""
