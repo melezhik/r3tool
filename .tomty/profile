@@ -9,10 +9,6 @@
     only => "closed",
     no-index-update => True,
   ),
-  default => %(
-    skip => "example,experimental,flap,noroot,deprecated,flickering,clarify,flaky,slow",
-    only => "closed",
-  ),
   rc_2021_07 => %(
     skip => "example,experimental,slow,flap,noroot",
     only => "rc_2021_07+closed"
