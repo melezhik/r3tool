@@ -1,0 +1,2 @@
+exit code: 1
+Cannot feed into shaped arrays, as one cannot '.append' to them.
