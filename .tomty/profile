@@ -5,7 +5,7 @@
     skip => "example,experimental,slow,unicode,flap"
   ),
   default => %(
-    skip => "example,experimental,flap,noroot,deprecated,flickering,clarify,flaky,slow",
+    skip => "example,experimental,flap,noroot,deprecated,flickering,clarify,flaky,slow,notabug",
     only => "closed",
     no-index-update => True,
   ),
