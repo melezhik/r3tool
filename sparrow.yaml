@@ -1,15 +1,3 @@
-init:
-  variables:
-    SP6_LOG_NO_TIMESTAMPS: 1
-
-  packages:
-    rakudo: {}
-
-  script: |
-    set -e
-    sudo apk add tree coreutils
-
-
 tasks:
   -
     name: test
@@ -31,4 +19,4 @@ tasks:
       sudo apk add tree coreutils
   -
     name: install-rakudo
-    plugin: sparkyci-package-rakudo    
+    plugin: sparkyci-package-rakudo
