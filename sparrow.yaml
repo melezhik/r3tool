@@ -1,0 +1,34 @@
+init:
+  variables:
+    SP6_LOG_NO_TIMESTAMPS: 1
+
+  packages:
+    rakudo: {}
+
+  script: |
+    set -e
+    sudo apk add tree coreutils
+
+
+tasks:
+  -
+    name: test
+    default: true
+    language: Bash
+    code: |
+      set -e
+      cd source
+      tomty  --all --show-failed --color --dump-task
+    depends:
+      -
+        name: deps
+      - 
+        name: install-rakudo  
+  -
+    name: deps
+    language: Bash
+    code: |
+      sudo apk add tree coreutils
+  -
+    name: install-rakudo
+    plugin: sparkyci-package-rakudo    
