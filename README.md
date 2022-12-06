@@ -6,7 +6,7 @@ R3 is a useful toolkit for Rakudo release managers and developers, aimed to help
 
 ![report example](https://raw.githubusercontent.com/melezhik/r3tool/master/screenshots/r3log-sample.png)
 
-[![SparkyCI](http://sparrowhub.io:2222/project/gh-melezhik-r3tool/badge)](http://sparrowhub.io:2222)
+[![SparkyCI](https://ci.sparrowhub.io/project/gh-melezhik-r3tool/badge)](https://ci.sparrowhub.io)
 
 # Installation
 
