@@ -5,6 +5,9 @@ tasks:
     language: Bash
     code: |
       set -e
+      echo $RAKUBIN
+      source ~/.profile
+      echo $RAKUBIN
       cd source
       tomty  --all --show-failed --color --dump-task
     depends:
