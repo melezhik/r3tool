@@ -10,13 +10,14 @@ tasks:
       echo $RAKUBIN
       cd source
       tomty  --all --show-failed --color --dump-task
+      tomty  --only=open
     depends:
       -
         name: deps
         queue: q1
         priority: 10
-      - 
-        name: install-rakudo  
+      -
+        name: install-rakudo
         queue: q1
         priority: 1000
   -
