@@ -13,8 +13,12 @@ tasks:
     depends:
       -
         name: deps
+        queue: q1
+        priority: 10
       - 
         name: install-rakudo  
+        queue: q1
+        priority: 1000
   -
     name: deps
     language: Bash
