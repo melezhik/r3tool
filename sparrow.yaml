@@ -9,8 +9,10 @@ tasks:
       source ~/.profile
       echo $RAKUBIN
       cd source
-      tomty  --all --show-failed --color --dump-task
-      tomty  --only=open
+      set +e
+      tomty  --all --show-failed --color --dump-task || code=$?
+      tomty  --only=open --color
+      exit $code
     depends:
       -
         name: deps
