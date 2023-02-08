@@ -113,7 +113,7 @@ RAKUBIN=$(which raku) s6 --task-run 123/
 Well. This is just an example, you can do a lot more, as test scenarios backed by Sparrow engine:
 
 * [write tests](https://github.com/melezhik/Sparrow6/blob/master/documentation/development.md) on Raku instead of Bash
-* use more [sophisticated constructions](https://github.com/melezhik/Sparrow6/blob/master/documentation/taskchecks.md) to very scripts output
+* use more [sophisticated constructions](https://github.com/melezhik/Sparrow6/blob/master/documentation/taskchecks.md) to verify scripts output
 
 
 ## Run test from suite
@@ -131,5 +131,3 @@ Or only this test:
 ```
 tomty 123
 ```
-
-
