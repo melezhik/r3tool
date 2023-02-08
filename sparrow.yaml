@@ -26,4 +26,4 @@ tasks:
       sudo apk add tree coreutils
   -
     name: install-rakudo
-    plugin: sparkyci-package-rakudo
+    plugin: sparrowci-package-rakudo
