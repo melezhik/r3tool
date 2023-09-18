@@ -5,9 +5,7 @@ tasks:
     language: Bash
     code: |
       set -e
-      echo $RAKUBIN
-      source ~/.profile
-      echo $RAKUBIN
+      raku --version
       cd source
       set +e
       code=0
@@ -25,17 +23,8 @@ tasks:
     depends:
       -
         name: deps
-        queue: q1
-        priority: 10
-      -
-        name: install-rakudo
-        queue: q1
-        priority: 1000
   -
     name: deps
     language: Bash
     code: |
       sudo apk add tree coreutils
-  -
-    name: install-rakudo
-    plugin: sparrowci-package-rakudo
