@@ -8,8 +8,8 @@ R3 is a useful toolkit for [Rakudo](https://github.com/rakudo/rakudo/issues) rel
 
 # Status
 
-* Closed bugs | ![SparkyCI](https://sparky.sparrowhub.io/badge/gh-melezhik-r3tool)
-* Open bugs | ![SparkyCI](https://sparky.sparrowhub.io/badge/gh-melezhik-r3tool-openbugs)
+* Closed bugs | ![SparkyCI](https://sparky.sparrowhub.io/badge/gh-melezhik-r3tool?foo=bar)
+* Open bugs | ![SparkyCI](https://sparky.sparrowhub.io/badge/gh-melezhik-r3tool-openbugs?foo=bar)
 
 # Installation
 
