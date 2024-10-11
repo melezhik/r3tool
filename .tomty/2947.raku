@@ -8,7 +8,7 @@ say "==================================================";
 
 =begin tomty
 %(
-  tag => $["closed", "repl", "flap"]
+  tag => $["closed", "repl"]
 );
 =end tomty
 
