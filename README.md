@@ -6,7 +6,8 @@ R3 is a useful toolkit for [Rakudo](https://github.com/rakudo/rakudo/issues) rel
 
 ![report example](https://raw.githubusercontent.com/melezhik/r3tool/master/screenshots/r3log-sample.png)
 
-[![SparkyCI](https://ci.sparrowhub.io/project/gh-melezhik-r3tool/badge)](https://ci.sparrowhub.io)
+![SparkyCI](https://sparky.sparrowhub.io/badge/gh-melezhik-r3tool)
+![SparkyCI](https://sparky.sparrowhub.io/badge/gh-melezhik-r3tool-openbugs)
 
 # Installation
 
