@@ -1,7 +1,9 @@
 #!raku
 
 my $issue = prompt("issue num: ");
-my $comment = prompt("comment: ");
+#my $comment = prompt("comment: ");
+
+my $comment = "added to R3 test suite";
 
 my $msg =  $comment ?? "[$comment] - https://github.com/rakudo/rakudo/issues/{$issue}" !! 
 "https://github.com/rakudo/rakudo/issues/{$issue}";
