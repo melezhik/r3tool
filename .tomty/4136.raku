@@ -8,7 +8,7 @@ say "==================================================";
 
 =begin tomty
 %(
-  tag => $["open", "regex"]
+  tag => $["closed", "regex"]
 );
 =end tomty
 
