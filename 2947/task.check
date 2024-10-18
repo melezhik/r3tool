@@ -1,7 +1,7 @@
 begin:
 
-  > Promise.new
-  > Nil
-  > done
+ Uncaught exception on thread
+ Attempt to divide 1 by zero when coercing Rational to Str
+ in block  at
 
 end:
