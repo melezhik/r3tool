@@ -8,7 +8,7 @@ say "==================================================";
 
 =begin tomty
 %(
-  tag => $["open", "zef", "weird"]
+  tag => $["open", "clarify", "zef", "weird"]
 );
 =end tomty
 
