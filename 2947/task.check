@@ -1,7 +1,4 @@
 begin:
-
- Uncaught exception on thread
- Attempt to divide 1 by zero when coercing Rational to Str
- in block  at
-
+[0] > 42
+[1] > 
 end:
