@@ -8,18 +8,19 @@ set -x
 
 mkdir -p $issue
 
+touch $issue/task.check
+
 cat << 'CODE' > $issue/task.bash
 set -e
 
 $RAKUBIN -v
 
-cat << 'HERE' > $cache_dir/code.raku
+cat  << 'HERE' | $RAKUBIN --repl-mode=interactive
 
 # broken code here
 
 HERE
 
-$RAKUBIN $cache_dir/code.raku
 CODE
 
 git add $issue
