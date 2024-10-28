@@ -8,7 +8,7 @@ say "==================================================";
 
 =begin tomty
 %(
-  tag => $["rejected"]
+  tag => $["closed"]
 );
 =end tomty
 
