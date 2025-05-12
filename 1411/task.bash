@@ -8,4 +8,4 @@ my sub word-bytes(Int:D $word --> List:D[Int]) { }
 
 HERE
 
-$RAKUBIN $cache_dir/code.raku
+$RAKUBIN --ll-exception $cache_dir/code.raku
