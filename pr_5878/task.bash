@@ -2,10 +2,9 @@ set -e
 
 $RAKUBIN -v
 
-cat  << 'HERE' | $RAKUBIN --repl-mode=interactive
+cat  << 'HERE' | $RAKUBIN
 module M { enum E is export <F G> }
 import M;
-sub MAIN (E $f, E :$g) { ... };
-exit;
+sub foo (E $f, E :$g) { ... };
 HERE
 
