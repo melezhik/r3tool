@@ -1,4 +1,1 @@
-begin:
-Variable '$verbose' is not declared.  Perhaps you forgot a 'sub' if
-this was intended to be part of a signature?
-end:
+Variable '$verbose' is not declared. Perhaps you forgot a 'sub'
